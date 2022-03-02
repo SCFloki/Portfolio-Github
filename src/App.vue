@@ -1,7 +1,7 @@
 <template>
 	<div id="app">
   <b-navbar toggleable="lg" type="dark" id="navbar">
-  <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+  <b-navbar-toggle target="nav-collapse" id="navbar-collapse">Navigation</b-navbar-toggle>
     <b-navbar-nav>
       <b-collapse id="nav-collapse" is-nav>
         <b-nav-item><router-link to="/">Projects</router-link></b-nav-item>
@@ -23,6 +23,10 @@ html, body {
   background-color: black;
 };
 
+#navbar {
+  display: inline-block;
+}
+
 #navbar ul{
   margin:auto;
 }
@@ -39,8 +43,17 @@ html, body {
   font-weight: bold
 }
 
+#navbar-collapse {
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 8px;
+}
 
-
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
 
 #app {
   background-color: black;
@@ -51,4 +64,5 @@ html, body {
 	color: #2c3e50;
 	margin-top: 60px;
 }
+
 </style>
