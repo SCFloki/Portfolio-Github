@@ -4,7 +4,7 @@
       <b-navbar-toggle target="nav-collapse" id="navbar-collapse">Navigation</b-navbar-toggle>
       <b-navbar-nav>
         <b-collapse id="nav-collapse" is-nav>
-          <b-nav-item><router-link to="/">Projects</router-link></b-nav-item>
+          <b-nav-item><router-link to="/projects">Projects</router-link></b-nav-item>
           <b-navbar-brand id="navbar-brand"><router-link to="/">SCFloki</router-link></b-navbar-brand>
           <b-nav-item><router-link to="/about">About</router-link></b-nav-item>
         </b-collapse>

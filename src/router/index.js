@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import WorkView from '@/views/WorkView.vue'
+import WorkView from '@/views/WorkView'
+import ProjectsView from '@/views/ProjectsView'
 
 Vue.use(VueRouter)
 
@@ -10,9 +11,9 @@ const routes = [
     component: WorkView
   },
   {
-    path: '/about',
-    name: 'about',
-    component: WorkView
+    path: '/projects',
+    name: 'projects',
+    component: ProjectsView
   },
 ]
 

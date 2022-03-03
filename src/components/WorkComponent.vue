@@ -5,7 +5,7 @@
                 {{name}}
             </b-col>
             <b-col>
-                <progress max="100" v-bind:value="progress"/>
+                <progress max="100" :value="progress"/>
             </b-col>
         </b-row>
     </div>
