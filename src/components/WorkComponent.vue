@@ -1,7 +1,7 @@
 <template>
     <div>
         <b-row>
-            <b-col>
+            <b-col id="col-1">
                 {{name}}
             </b-col>
             <b-col>
@@ -47,5 +47,8 @@ progress::-webkit-progress-bar {
     #000000 12px, 
     #000000 13.6px,
   );
+}
+#col-1 {
+    text-align: end;
 }
 </style>
