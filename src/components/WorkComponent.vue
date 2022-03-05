@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="cont">
         <b-row>
             <b-col id="col-1">
                 {{name}}
@@ -23,6 +23,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
+
 
 progress {
   border: 1px solid white;

@@ -6,11 +6,12 @@
         <b-collapse id="nav-collapse" is-nav>
           <b-nav-item><router-link to="/projects">Projects</router-link></b-nav-item>
           <b-navbar-brand id="navbar-brand"><router-link to="/">SCFloki</router-link></b-navbar-brand>
-          <b-nav-item><router-link to="/about">About</router-link></b-nav-item>
+          <b-nav-item><router-link to="/game">Game</router-link></b-nav-item>
         </b-collapse>
       </b-navbar-nav>
     </b-navbar>
     <router-view/>
+    <Game/>
 	</div>
 </template>
 
