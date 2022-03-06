@@ -1,17 +1,16 @@
 <template>
 	<div id="app">
-    <b-navbar toggleable="lg" type="dark" id="navbar">
-      <b-navbar-toggle target="nav-collapse" id="navbar-collapse">Navigation</b-navbar-toggle>
-      <b-navbar-nav>
-        <b-collapse id="nav-collapse" is-nav>
-          <b-nav-item><router-link to="/projects">Projects</router-link></b-nav-item>
-          <b-navbar-brand id="navbar-brand"><router-link to="/">SCFloki</router-link></b-navbar-brand>
-          <b-nav-item><router-link to="/game">Game</router-link></b-nav-item>
-        </b-collapse>
-      </b-navbar-nav>
-    </b-navbar>
+      <b-navbar toggleable="lg" id="navbar">
+        <b-navbar-toggle target="nav-collapse" id="navbar-collapse">Navigation</b-navbar-toggle>
+          <b-navbar-nav>
+            <b-collapse id="nav-collapse" is-nav>
+              <b-nav-item id="nav-item"><router-link to="/projects">Projects</router-link></b-nav-item>
+              <b-navbar-brand id="navbar-brand"><router-link to="/">SCFloki</router-link></b-navbar-brand>
+              <b-nav-item id="nav-item"><router-link to="/game">Hobbies</router-link></b-nav-item>
+            </b-collapse>
+          </b-navbar-nav>
+        </b-navbar>
     <router-view/>
-    <Game/>
 	</div>
 </template>
 
@@ -24,7 +23,7 @@ html, body {
   background-color: black;
 };
 
-#navbar, {
+#navbar {
   display: inline-block;
 }
 
@@ -32,12 +31,20 @@ html, body {
   text-decoration: none;
   color: white;
   letter-spacing: 8px;
+
+  
 }
+
 
 #navbar-brand {
   margin-right: 180px;
   margin-left: 180px;
-  font-weight: bold
+  font-weight: bold;
+  background:
+  linear-gradient(97deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%)
+    bottom
+    no-repeat; 
+  background-size:100% 3px;
 }
 
 #navbar-collapse {

@@ -1,10 +1,8 @@
 <template>
-    <div id="cont">
-        <b-row>
+    <div>
+        <b-row id="work-item">
             <b-col id="col-1">
-                {{name}}
-            </b-col>
-            <b-col>
+                {{name}} <br>
                 <progress max="100" :value="progress"/>
             </b-col>
         </b-row>
@@ -24,11 +22,14 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
 
+#work-item {
+  margin-bottom: 20px;
+}
 
 progress {
   border: 1px solid white;
   padding: 2px;
-  width: 250px;
+  width: 80%;
   height: 20px;
 }
 
@@ -48,8 +49,5 @@ progress::-webkit-progress-bar {
     #000000 12px, 
     #000000 13.6px,
   );
-}
-#col-1 {
-    text-align: end;
 }
 </style>
