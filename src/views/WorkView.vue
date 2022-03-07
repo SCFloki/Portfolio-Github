@@ -49,12 +49,14 @@
 		<!-- Experiences Container -->
 		<b-container id="exp-container">
 			<b-row id="exp-row">
-				<p id="exp-title">Experiences</p>
+				<p id="exp">Experiences</p>
 				<ExpComponent               
 					v-for="exp in exps"
 					:key="exp.id"
+					:title="exp.title"
 					:source="exp.source"
 					:desc="exp.desc"
+					:date="exp.date"
 				/>
 			</b-row>
 		</b-container>
@@ -151,11 +153,15 @@ export default {
 			exps: [
 				{
 					id: 0,
+					title: "TauXtec",
 					source: require('@/assets/images/tauxtec.png'),
-					desc: "Buisness consulting"
+					desc: "Réalisation d'un stage a l'issue de ma 3ème année de mon parcours d'ingénieur informatique",
+					date: "Janvier 2020 - Avril 2020"
+
 				},
 				{
 					id: 1,
+					title: "Projet d'étude React Native",
 					source: require('@/assets/images/react-native.png'),
 					desc: "Buisness consulting"
 				},
@@ -179,8 +185,7 @@ export default {
 	letter-spacing: 5px;
 	background-image: url('@/assets/images/bg.png'), url('@/assets/images/bg.png');
 	background-repeat: repeat-x;
-	border-bottom: 2px dashed white;
-	border-top: 2px dashed white;
+
 	animation: animatedBackground 2s linear infinite;
 }
 
@@ -201,16 +206,10 @@ export default {
 	padding-top: 30px;
 }
 
-#exp-title {
+#exp {
 	letter-spacing: 5px;
 	font-weight: bold;
-	background:
-		linear-gradient(97deg, rgba(255,255,255,0) 0%,
-		rgba(255,255,255,0.8) 50%,
-		rgba(255,255,255,0) 100%)
-		bottom
-		no-repeat;
-	background-size:20% 1px;
+
 }
 
 .skills-col {
@@ -220,7 +219,7 @@ export default {
 .skills-col p {
 	font-weight: bold;
 	background:
-		linear-gradient(97deg, rgba(255,255,255,0) 0%,
+		linear-gradient(90deg, rgba(255,255,255,0) 0%,
 		rgba(255,255,255,0.8) 50%,
 		rgba(255,255,255,0) 100%)
 		bottom
