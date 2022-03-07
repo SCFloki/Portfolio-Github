@@ -1,15 +1,16 @@
 <template>
-  <div id="projects-container">
-    <h2 id="title">- Projects -</h2>
-    <ProjectsComponent
-        v-for="project in projects"
-        :key="project.id"
-        :image="project.image"
-        :name="project.name"
-        :desc="project.desc"
-        :date="project.date"
-    />
-  </div>
+    <div id="projects-container">
+        <h2 id="title">- Projects -</h2>
+
+        <ProjectsComponent
+            v-for="project in projects"
+            :key="project.id"
+            :image="project.image"
+            :name="project.name"
+            :desc="project.desc"
+            :date="project.date"
+        />
+    </div>
 </template>
 
 <script>
@@ -52,6 +53,10 @@ export default {
 </script>
 
 <style lang="scss">
+
+#project-container {
+    text-align: start;
+}
   #projects-container {
     margin-top: 50px;
   }

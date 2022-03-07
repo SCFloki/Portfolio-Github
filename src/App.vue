@@ -1,5 +1,5 @@
 <template>
-	<div id="app">
+    <div id="app">
       <b-navbar toggleable="lg" id="navbar">
         <b-navbar-toggle target="nav-collapse" id="navbar-collapse">Navigation</b-navbar-toggle>
           <b-navbar-nav>
@@ -11,7 +11,7 @@
           </b-navbar-nav>
         </b-navbar>
     <router-view/>
-	</div>
+    </div>
 </template>
 
 <script>
@@ -34,7 +34,7 @@ html, body {
 
   
 }
-
+  
 
 #navbar-brand {
   margin-right: 180px;
@@ -56,12 +56,12 @@ html, body {
 
 #app {
   background-color: black;
-	font-family: "Avenir", Helvetica, Arial, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-align: center;
-	color: #2c3e50;
-	margin-top: 60px;
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
 }
 
 </style>
