@@ -5,7 +5,7 @@
           <b-navbar-nav>
             <b-collapse id="nav-collapse" is-nav>
               <b-nav-item id="nav-item"><router-link to="/projects">Projects</router-link></b-nav-item>
-              <b-navbar-brand id="navbar-brand"><router-link to="/">SCFloki</router-link></b-navbar-brand>
+              <b-nav-item id="navbar-brand"><router-link to="/">SCFloki</router-link></b-nav-item>
               <b-nav-item id="nav-item"><router-link to="/game">Hobbies</router-link></b-nav-item>
             </b-collapse>
           </b-navbar-nav>
@@ -37,14 +37,9 @@ html, body {
   
 
 #navbar-brand {
-  margin-right: 180px;
-  margin-left: 180px;
   font-weight: bold;
-  background:
-  linear-gradient(97deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%)
-    bottom
-    no-repeat; 
-  background-size:100% 3px;
+  padding-right: 60px;
+  padding-left: 60px;
 }
 
 #navbar-collapse {
