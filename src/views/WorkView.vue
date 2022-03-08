@@ -5,12 +5,13 @@
 			<b-row>
 				<!-- Profile picture -->
 				<b-col id="profile">
-					<img src="@/assets/images/profile.jpg"><br><br>Doublet Kévin
+					<img src="@/assets/images/profile.jpg"><br><br>
+					Doublet Kévin
 				</b-col>
 
 				<!-- Language Skills -->
 				<b-col class="skills-col">
-					<p>Langage</p>
+					<p id="skill-title">Langage</p>
 
 					<SkillComponent 
 						v-for="language in languages"
@@ -24,7 +25,7 @@
 
 				<!-- Framework Skills -->
 				<b-col class="skills-col">
-					<p>Framework</p>
+					<p id="skill-title">Framework</p>
 
 					<SkillComponent 
 						v-for="framework in frameworks"
@@ -38,7 +39,7 @@
 
 				<!-- Dev Tools Skills -->
 				<b-col class="skills-col">
-					<p>Outils de développement</p>
+					<p id="skill-title">Outils de développement</p>
 					<SkillComponent 
 						v-for="tool in tools"
 						:key="tool.id"
@@ -86,35 +87,35 @@ export default {
 					name: "HTML/CSS",
 					progress: 100,
 					info_dropdown: 0,
-					desc: "test HTML/CSS"
+					desc: "Langage maitrisé au cours de mon parcours"
 				},
 				{
 					id: 1,
 					name: "JS",
 					progress: 70,
 					info_dropdown: 1,
-					desc: "test JS"
+					desc: "Notion de base acquise, en constant apprentissage"
 				},       
 				{
 					id: 3,
 					name: "PHP",
 					progress: 60,
 					info_dropdown: 2,
-					desc: "test PHP"
+					desc: "Traitement de requête pour la conception de site dynamique"
 				},        
 				{
 					id: 4,
 					name: "SQL",
 					progress: 60,
 					info_dropdown: 3,
-					desc: "test SQL"
+					desc: "Exploitation de base de données sur divers projets"
 				},
 				{
 					id: 5,
 					name: "Python",
 					progress: 70,
 					info_dropdown: 4,
-					desc: "Python"
+					desc: "Découverte de Python en stage par l'utilisation du Framework Django"
 				}
 			],
 
@@ -124,28 +125,28 @@ export default {
 					name: "VueJS",
 					progress: 70,
 					info_dropdown: 5,
-					desc: "test VueJS"
+					desc: "Utilisation de VueJS pour quelques projets web, ce portfolio à été créer avec VueJS"
 				},
 				{
 					id: 1,
 					name: "React Native",
 					progress: 60,
 					info_dropdown: 6,
-					desc: "test React Native"
+					desc: "Dévellopement d'un application mobile avec React Native"
 				},
 				{
 					id: 2,
 					name: "Symfony",
 					progress: 65,
 					info_dropdown: 7,
-					desc: "test Symfony"
+					desc: "Utilisation de quelques projets web effectués durant ma formation d'ingénieur"
 				},
 				{
 					id: 3,
 					name: "Django",
 					progress: 80,
 					info_dropdown: 8,
-					desc: "test Django"
+					desc: "Notion de base de Django (4 mois de stage), compétences en Python acquise"
 				}
 
 			],
@@ -156,14 +157,14 @@ export default {
 					name: "Git/Github",
 					progress: 90,
 					info_dropdown: 9,
-					desc: "test Github"
+					desc: "Gestion des commandes Git, Utilisation de GitHub"
 				},
 				{
 					id: 1,
 					name: "Visual Studio Code",
 					progress: 100,
 					info_dropdown: 10,
-					desc: 'Utilisation de VSCode test <br>'
+					desc: 'Utilisation de VSCode'
 				},
 				{
 					id: 2,
@@ -179,15 +180,37 @@ export default {
 					id: 0,
 					title: "TauXtec",
 					source: require('@/assets/images/tauxtec.png'),
-					desc: "Réalisation d'un stage a l'issue de ma 3ème année de mon parcours d'ingénieur informatique",
-					date: "Janvier 2020 - Avril 2020"
+					desc: "Réalisation d'un stage en tant que développeur web l'issue de ma 3ème année de mon parcours d'ingénieur informatique. La mission était la suivante, répondre aux besoins des utlisateurs en améliorant une application web financière. J'ai pu acquérir des compétences en Python en travaillant sur le framework Django, en travaillant en entreprise j'ai pu améliorer mon sens du travail collectif.",
+					date: "Janvier 2021 - Avril 2021"
 
 				},
 				{
 					id: 1,
 					title: "Projet d'étude React Native",
 					source: require('@/assets/images/react-native.png'),
-					desc: "Buisness consulting"
+					desc: "Lors de ma deuxième année j'ai eu l'occasion développer une application mobile au sein d'un groupe de projet, pour ce faire nous avons choisis de travailler avec React Native pour sa compatibilité avec les différents OS. Nous avons décidé de mettre en avant les commerces les plus touchés par la COVID-19 par le biais d'une application qui leur donnerais plus de visibilité.",
+					date: "Juilllet 2020"
+				},
+				{
+					id: 3,
+					title: "Président Keyboard Society",
+					source: require('@/assets/images/logo.png'),
+					desc: "La Keyboard society est une association évènementiel de jeu vidéo, mes camarades et moi-même avons pu fonder cette association et organiser un certains nombres d'évènement notament des LAN au sein de notre école. Chaque évènements nous ont confronter à différents problèmes qui ont pu être résolu en travaillant sur notre organisation au sein de l'association.",
+					date: "2019 - 2021"
+				},
+				{
+					id: 4,
+					title: "Ambassadeur CESI Corp",
+					source: require('@/assets/images/cesi.jpg'),
+					desc: "Membre de CESI Corp au sein de mon école, je suis venu en aide à la mise en place des portes ouvertes afin de promouvoir l'école j'ai pu y travailler mon sens de l'organisation et donner une cohésion au sein d'un groupe",
+					date: "2019 - 2021"
+				},
+				{
+					id: 5,
+					title: "Altameos Multimedia",
+					source: require('@/assets/images/altameos.png'),
+					desc: "Stage d'observation au poste d'intégrateur HTML. Ce fut mon tout premier stage que j'ai effectuer dans le domaine du web j'ai pu y découvrir la structure d'une société ainsi que les toutes premieres notions de base liées à au dévellopement d'un site web.",
+					date: "2013"
 				},
 			]
 		}
@@ -209,8 +232,7 @@ export default {
 	letter-spacing: 5px;
 	background-image: url('@/assets/images/bg.png'), url('@/assets/images/bg.png');
 	background-repeat: repeat-x;
-
-	animation: animatedBackground 2s linear infinite;
+	animation: animatedBackground 4s linear infinite;
 }
 
 #profile {
@@ -230,18 +252,18 @@ export default {
 	padding-top: 30px;
 }
 
-#exp {
-	letter-spacing: 5px;
+#skill-title{
 	font-weight: bold;
+	letter-spacing: 5px;
 
 }
 
 .skills-col {
-	margin: 20px;
+
+	margin: 40px;
 }
 
 .skills-col p {
-	font-weight: bold;
 	margin-top: 20px;
 }
 </style>

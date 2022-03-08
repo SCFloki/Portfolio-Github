@@ -11,7 +11,7 @@
 					<img src="@/assets/images/info.png">
 				</b-button>
 				<b-collapse :id="'collapse-' + info" class="mt-2">
-					{{ desc }}
+					<p id="skill-desc" >{{ desc }}</p>
 				</b-collapse>
 
 				<!-- Progress bar Skill -->
@@ -45,6 +45,12 @@ export default {
 #info-button {
   background: black;
   border: 0;
+}
+
+#skill-desc{
+	font-style: italic;
+	font-size: small;
+	text-align: start;
 }
 
 progress {
