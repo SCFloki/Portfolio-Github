@@ -18,6 +18,7 @@
 						:name="language.name"
 						:progress="language.progress"
 						:info="language.info_dropdown"
+						:desc="language.desc"
 					/>
 				</b-col>
 
@@ -30,6 +31,8 @@
 						:key="framework.id"
 						:name="framework.name"
 						:progress="framework.progress"
+						:info="framework.info_dropdown"
+						:desc="framework.desc"
 					/>
 				</b-col>
 
@@ -41,6 +44,8 @@
 						:key="tool.id"
 						:name="tool.name"
 						:progress="tool.progress"
+						:info="tool.info_dropdown"
+						:desc="tool.desc"
 					/>
 				</b-col>
 			</b-row>
@@ -81,53 +86,66 @@ export default {
 					name: "HTML/CSS",
 					progress: 100,
 					info_dropdown: 0,
+					desc: "test HTML/CSS"
 				},
 				{
 					id: 1,
 					name: "JS",
 					progress: 70,
 					info_dropdown: 1,
+					desc: "test JS"
 				},       
 				{
 					id: 3,
 					name: "PHP",
 					progress: 60,
 					info_dropdown: 2,
+					desc: "test PHP"
 				},        
 				{
 					id: 4,
 					name: "SQL",
 					progress: 60,
 					info_dropdown: 3,
+					desc: "test SQL"
 				},
 				{
 					id: 5,
 					name: "Python",
 					progress: 70,
 					info_dropdown: 4,
+					desc: "Python"
 				}
 			],
 
 			frameworks: [
 				{
 					id: 0,
-					name: "Vue",
+					name: "VueJS",
 					progress: 70,
+					info_dropdown: 5,
+					desc: "test VueJS"
 				},
 				{
 					id: 1,
 					name: "React Native",
 					progress: 60,
+					info_dropdown: 6,
+					desc: "test React Native"
 				},
 				{
 					id: 2,
 					name: "Symfony",
 					progress: 65,
+					info_dropdown: 7,
+					desc: "test Symfony"
 				},
 				{
 					id: 3,
 					name: "Django",
 					progress: 80,
+					info_dropdown: 8,
+					desc: "test Django"
 				}
 
 			],
@@ -136,17 +154,23 @@ export default {
 				{
 					id: 0,
 					name: "Git/Github",
-					progress: 90
+					progress: 90,
+					info_dropdown: 9,
+					desc: "test Github"
 				},
 				{
 					id: 1,
 					name: "Visual Studio Code",
-					progress: 100
+					progress: 100,
+					info_dropdown: 10,
+					desc: 'Utilisation de VSCode test <br>'
 				},
 				{
 					id: 2,
 					name: "Trello",
-					progress: 100
+					progress: 100,
+					info_dropdown: 11,
+					desc: "Planifier des tâches de groupe avec Trello"
 				},
 			],
 
@@ -218,13 +242,6 @@ export default {
 
 .skills-col p {
 	font-weight: bold;
-	background:
-		linear-gradient(90deg, rgba(255,255,255,0) 0%,
-		rgba(255,255,255,0.8) 50%,
-		rgba(255,255,255,0) 100%)
-		bottom
-		no-repeat;
-	background-size:100% 1px;
-	margin: 20px;
+	margin-top: 20px;
 }
 </style>

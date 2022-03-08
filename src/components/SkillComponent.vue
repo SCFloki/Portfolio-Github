@@ -11,7 +11,7 @@
 					<img src="@/assets/images/info.png">
 				</b-button>
 				<b-collapse :id="'collapse-' + info" class="mt-2">
-					Collapse contents Here
+					{{ desc }}
 				</b-collapse>
 
 				<!-- Progress bar Skill -->
@@ -27,7 +27,8 @@ export default {
 	props: {
 		name: String,
 		progress: Number,
-		info: Number
+		info: Number,
+		desc: String,
 	}
 }
 </script>
