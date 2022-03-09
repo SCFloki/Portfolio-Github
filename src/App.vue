@@ -1,18 +1,19 @@
 <template>
     <div id="app">
-      <b-navbar toggleable="lg" id="navbar">
-        <b-navbar-toggle target="nav-collapse" id="navbar-collapse">Navigation</b-navbar-toggle>
-          <b-navbar-nav>
-            <b-collapse id="nav-collapse" is-nav>
-              <b-nav-item id="navbar-brand"><router-link to="/portfolio-github/">SCFloki</router-link></b-nav-item>
-            </b-collapse>
-          </b-navbar-nav>
-        </b-navbar>
-    <router-view/>
+      <h4 id="title">SCFloki</h4>
+      <WorkView />
     </div>
 </template>
 
 <script>
+  import WorkView from './views/WorkView.vue'
+
+  export default {
+    name: 'App',
+    components: {
+      WorkView
+    }
+  }
 </script>
 
 <style lang="scss">
@@ -21,31 +22,14 @@ html, body {
   background-color: black;
 };
 
-#navbar {
-  display: inline-block;
-}
-
-#navbar a{
-  text-decoration: none;
-  color: white;
-  letter-spacing: 8px;
-
-  
-}
-  
-
-#navbar-brand {
-  font-weight: bold;
-  padding-right: 60px;
-  padding-left: 60px;
-}
-
-#navbar-collapse {
+#title {
   font-weight: bold;
   text-decoration: none;
   color: white;
   letter-spacing: 8px;
+  font-weight: normal;
 }
+
 
 #app {
   background-color: black;

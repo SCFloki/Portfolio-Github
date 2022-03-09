@@ -4,7 +4,7 @@
 		<b-container id="skills-container">
 			<b-row>
 				<!-- Profile picture -->
-				<b-col cols="3" id="profile">
+				<b-col id="profile">
 					<img src="@/assets/images/profile.jpg"><br><br>
 					Doublet Kévin
 				</b-col>
@@ -252,11 +252,12 @@ export default {
 #profile {
 	margin: auto;
 	border-right: 1px solid white;
+
 }
 
 #profile img {
 	border-radius: 50%;
-	width: 60%;
+	width: 80%;
 	border: 2px solid white;
 }
 
@@ -274,7 +275,8 @@ export default {
 
 .skills-col {
 	margin-bottom: 25px;
-	margin-left: 50px;
+	margin-left: 25px;
+	margin-right: 25px
 }
 
 .skills-col p {
