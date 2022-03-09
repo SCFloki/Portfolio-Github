@@ -7,9 +7,9 @@
 				{{name}}
 
 				<!-- Info skills Button -->
-				<b-button id="info-button" v-b-toggle="'collapse-' + info">
+				<button id="info-button" v-b-toggle="'collapse-' + info">
 					<img src="@/assets/images/info.png">
-				</b-button>
+				</button>
 				<b-collapse :id="'collapse-' + info" class="mt-2">
 					<p id="skill-desc" >{{ desc }}</p>
 				</b-collapse>
@@ -44,7 +44,12 @@ export default {
 
 #info-button {
   background: black;
+  margin-bottom: 5px;
   border: 0;
+}
+
+#info-button img{
+	vertical-align: middle;
 }
 
 #skill-desc{

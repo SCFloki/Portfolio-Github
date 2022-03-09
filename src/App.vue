@@ -4,9 +4,7 @@
         <b-navbar-toggle target="nav-collapse" id="navbar-collapse">Navigation</b-navbar-toggle>
           <b-navbar-nav>
             <b-collapse id="nav-collapse" is-nav>
-              <b-nav-item id="nav-item"><router-link to="/projects">Projects</router-link></b-nav-item>
-              <b-nav-item id="navbar-brand"><router-link to="/">SCFloki</router-link></b-nav-item>
-              <b-nav-item id="nav-item"><router-link to="/game">Hobbies</router-link></b-nav-item>
+              <b-nav-item id="navbar-brand"><router-link to="/portfolio-github/">SCFloki</router-link></b-nav-item>
             </b-collapse>
           </b-navbar-nav>
         </b-navbar>

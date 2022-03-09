@@ -1,19 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import WorkView from '@/views/WorkView'
-import ProjectsView from '@/views/ProjectsView'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
+    path: '/portfolio-github/',
     component: WorkView
-  },
-  {
-    path: '/projects',
-    name: 'projects',
-    component: ProjectsView
   },
 ]
 

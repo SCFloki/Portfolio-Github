@@ -4,7 +4,7 @@
 		<b-container id="skills-container">
 			<b-row>
 				<!-- Profile picture -->
-				<b-col id="profile">
+				<b-col cols="3" id="profile">
 					<img src="@/assets/images/profile.jpg"><br><br>
 					Doublet Kévin
 				</b-col>
@@ -55,7 +55,7 @@
 		<!-- Experiences Container -->
 		<b-container id="exp-container">
 			<b-row id="exp-row">
-				<p id="exp">Experiences</p>
+				<p id="skill-title">Experiences</p>
 				<ExpComponent               
 					v-for="exp in exps"
 					:key="exp.id"
@@ -92,30 +92,37 @@ export default {
 				{
 					id: 1,
 					name: "JS",
-					progress: 70,
+					progress: 60,
 					info_dropdown: 1,
 					desc: "Notion de base acquise, en constant apprentissage"
 				},       
 				{
 					id: 3,
 					name: "PHP",
-					progress: 60,
+					progress: 70,
 					info_dropdown: 2,
 					desc: "Traitement de requête pour la conception de site dynamique"
 				},        
 				{
 					id: 4,
 					name: "SQL",
-					progress: 60,
+					progress: 40,
 					info_dropdown: 3,
 					desc: "Exploitation de base de données sur divers projets"
 				},
 				{
 					id: 5,
 					name: "Python",
-					progress: 70,
+					progress: 60,
 					info_dropdown: 4,
 					desc: "Découverte de Python en stage par l'utilisation du Framework Django"
+				},
+				{
+					id: 6,
+					name: "Java",
+					progress: 20,
+					info_dropdown: 5,
+					desc: "Notion de base acquise"
 				}
 			],
 
@@ -124,30 +131,37 @@ export default {
 					id: 0,
 					name: "VueJS",
 					progress: 70,
-					info_dropdown: 5,
+					info_dropdown: 6,
 					desc: "Utilisation de VueJS pour quelques projets web, ce portfolio à été créer avec VueJS"
 				},
 				{
 					id: 1,
 					name: "React Native",
-					progress: 60,
-					info_dropdown: 6,
-					desc: "Dévellopement d'un application mobile avec React Native"
+					progress: 70,
+					info_dropdown: 7,
+					desc: "Dévelopement d'un application mobile avec React Native"
 				},
 				{
 					id: 2,
-					name: "Symfony",
-					progress: 65,
-					info_dropdown: 7,
-					desc: "Utilisation de quelques projets web effectués durant ma formation d'ingénieur"
+					name: "React",
+					progress: 60,
+					info_dropdown: 8,
+					desc: "Utilisé à plusieurs reprise sur certains projet web"
 				},
 				{
 					id: 3,
+					name: "Symfony",
+					progress: 40,
+					info_dropdown: 9,
+					desc: "Utilisation de Symfony sur quelques projets web effectués durant ma formation d'ingénieur"
+				},
+				{
+					id: 4,
 					name: "Django",
-					progress: 80,
-					info_dropdown: 8,
+					progress: 60,
+					info_dropdown: 10,
 					desc: "Notion de base de Django (4 mois de stage), compétences en Python acquise"
-				}
+				},
 
 			],
 
@@ -155,22 +169,22 @@ export default {
 				{
 					id: 0,
 					name: "Git/Github",
-					progress: 90,
-					info_dropdown: 9,
+					progress: 85,
+					info_dropdown: 11,
 					desc: "Gestion des commandes Git, Utilisation de GitHub"
 				},
 				{
 					id: 1,
 					name: "Visual Studio Code",
-					progress: 100,
-					info_dropdown: 10,
+					progress: 90,
+					info_dropdown: 12,
 					desc: 'Utilisation de VSCode'
 				},
 				{
 					id: 2,
 					name: "Trello",
 					progress: 100,
-					info_dropdown: 11,
+					info_dropdown: 13,
 					desc: "Planifier des tâches de groupe avec Trello"
 				},
 			],
@@ -195,7 +209,7 @@ export default {
 					id: 3,
 					title: "Président Keyboard Society",
 					source: require('@/assets/images/logo.png'),
-					desc: "La Keyboard society est une association évènementiel de jeu vidéo, mes camarades et moi-même avons pu fonder cette association et organiser un certains nombres d'évènement notament des LAN au sein de notre école. Chaque évènements nous ont confronter à différents problèmes qui ont pu être résolu en travaillant sur notre organisation au sein de l'association.",
+					desc: "La Keyboard society est une association évènementiel de jeu vidéo, mes camarades et moi-même avons pu fonder cette association et organiser un certains nombres d'évènements notament des LAN au sein de notre école. Chaque évènements nous ont confronter à différents problèmes qui ont pu être résolus en travaillant sur notre organisation au sein de l'association.",
 					date: "2019 - 2021"
 				},
 				{
@@ -259,8 +273,8 @@ export default {
 }
 
 .skills-col {
-
-	margin: 40px;
+	margin-bottom: 25px;
+	margin-left: 50px;
 }
 
 .skills-col p {

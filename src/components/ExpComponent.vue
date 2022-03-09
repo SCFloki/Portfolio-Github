@@ -58,7 +58,6 @@ export default {
 #exp-date {
 	float: right;
 	font-style: italic;
-
 }
 
 #exp-desc {
