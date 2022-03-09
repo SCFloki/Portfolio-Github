@@ -41,8 +41,7 @@ export default {
 
 #exp-image {
 	width: 50%;
-	margin-right: 20px;
-	margin-top: 30px;
+	margin-bottom: 10px;
 }
 
 #exp-title {
